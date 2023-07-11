@@ -104,7 +104,7 @@ function NavBar() {
             {/* Blog Link */}
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
+                href="https://twp-mvc-tech-blog-632648a365a8.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -114,7 +114,7 @@ function NavBar() {
             {/* Github Link */}
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/TpainMcain/20-React-Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >
