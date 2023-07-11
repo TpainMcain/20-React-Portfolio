@@ -20,7 +20,7 @@ function Home2() {
           {/* Column for description */}
           <Col md={8} className="home-about-description">
             {/* Self Introduction Section */}
-            <h1 style={{ fontSize: "2.6em" }}>LET ME <span className="purple"> INTRODUCE </span> MYSELF</h1>
+            <h1 style={{ fontSize: "2em", paddingLeft: "10px" }}>LET ME <span className="purple"> INTRODUCE </span> MYSELF</h1>
             {/* The content of the self-introduction */}
             <p className="home-about-body">
               I fell in love with programming and I have at least learnt

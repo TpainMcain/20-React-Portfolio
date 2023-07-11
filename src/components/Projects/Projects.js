@@ -48,6 +48,54 @@ function Projects() {
             />
           </Col>
 
+                    {/* Card for the "" project */}
+                    <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title=""
+              description=""
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+
+                    {/* Card for the "" project */}
+                    <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title=""
+              description=""
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+
+                    {/* Card for the "" project */}
+                    <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title=""
+              description=""
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+
+                    {/* Card for the "" project */}
+                    <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title=""
+              description=""
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+
           {/* Repeat for each project */}
 
           {/* ... */}

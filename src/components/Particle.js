@@ -13,7 +13,7 @@ function Particle() {
       params={{
         particles: {
           number: {
-            value: 160,  // Number of particles
+            value: 90,  // Number of particles
             density: {
               enable: true,  // Enable particle density rule
               value_area: 1500,  // Area in which particles are placed
@@ -28,7 +28,7 @@ function Particle() {
             speed: 0.05,  // Speed of particle movement
           },
           size: {
-            value: 1,  // Size of particles
+            value: .8,  // Size of particles
           },
           opacity: {
             anim: {
