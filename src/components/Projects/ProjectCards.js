@@ -10,16 +10,16 @@ function ProjectCards(props) {
   return (
     // Card component from react-bootstrap
     <Card className="project-card-view">
-      // Image of the card
+      {/* Image of the card */}
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        // Title of the card
+        {/* Title of the card */}
         <Card.Title>{props.title}</Card.Title>
-        // Description of the card
+        {/* Description of the card */}
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        // Button which redirects to the project's GitHub page or Blog
+        {/* Button which redirects to the project's GitHub page or Blog */}
         <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
@@ -27,7 +27,7 @@ function ProjectCards(props) {
         {"\n"}
         {"\n"}
 
-        // If the component contains a Demo link and if it's not a Blog then, it will render the below component
+        {/* If the component contains a Demo link and if it's not a Blog then, it will render the below component */}
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"

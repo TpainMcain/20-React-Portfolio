@@ -13,36 +13,36 @@ function Home() {
   return (
     // A section to encapsulate the entire home page
     <section>
-      // The main container for the home page, with its class and id set
+      {/* The main container for the home page, with its class and id set */}
       <Container fluid className="home-section" id="home">
-        // The particle animation in the background
+        {/* The particle animation in the background */}
         <Particle />
-        // The main content container
+        {/* The main content container */}
         <Container className="home-content">
-          // A row for the content
+          {/* A row for the content */}
           <Row>
-            // Column for the text and Type animation
+            {/* Column for the text and Type animation */}
             <Col md={7} className="home-header">
-              // Greeting header
+              {/* Greeting header */}
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
-              // Introduction header
+              {/* Introduction header */}
               <h1 className="heading-name">
                 I'M
                 <strong className="main-name"> TREVOR PRATT</strong>
               </h1>
-              // Type animation
+              {/* Type animation */}
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
-            // Column for the image
+            {/* Column for the image */}
             <Col md={5} style={{ paddingBottom: 20 }}>
-              // Image
+              {/* Image */}
               <img
                 src={homeLogo}
                 alt="home pic"
@@ -53,7 +53,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      // Home2 component
+      {/* Home2 component */}
       <Home2 />
     </section>
   );

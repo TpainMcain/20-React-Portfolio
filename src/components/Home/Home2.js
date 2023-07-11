@@ -17,11 +17,11 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          // Column for description
+          {/* Column for description */}
           <Col md={8} className="home-about-description">
-            // Self Introduction Section
+            {/* Self Introduction Section */}
             <h1 style={{ fontSize: "2.6em" }}>LET ME <span className="purple"> INTRODUCE </span> MYSELF</h1>
-            // The content of the self-introduction
+            {/* The content of the self-introduction */}
             <p className="home-about-body">
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
@@ -54,20 +54,20 @@ function Home2() {
               </i>
             </p>
           </Col>
-          // Column for avatar
+          {/* Column for avatar */}
           <Col md={4} className="myAvtar">
-            // Tilting effect for the avatar image
+            {/* Tilting effect for the avatar image */}
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
         <Row>
-          // Column for social links
+          {/* Column for social links */}
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>Feel free to <span className="purple">connect </span>with me</p>
-            // Social media links
+            {/* Social media links */}
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -76,7 +76,7 @@ function Home2() {
                   rel="noreferrer" // For security reasons
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub /> // GitHub icon
+                  <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
@@ -86,7 +86,7 @@ function Home2() {
                   rel="noreferrer" // For security reasons
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter /> // Twitter icon
+                  <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
@@ -96,7 +96,7 @@ function Home2() {
                   rel="noreferrer" // For security reasons
                   className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn /> // LinkedIn icon
+                  <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
@@ -106,7 +106,7 @@ function Home2() {
                   rel="noreferrer" // For security reasons
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram /> // Instagram icon
+                  <AiFillInstagram />
                 </a>
               </li>
             </ul>
