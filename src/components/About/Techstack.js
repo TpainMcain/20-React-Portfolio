@@ -27,7 +27,7 @@ function Techstack() {
   return (
     // A row for laying out icons
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      // Each column contains an icon representing a technology
+      {/* Each column contains an icon representing a technology */}
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
       </Col>

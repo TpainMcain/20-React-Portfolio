@@ -2,10 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "16.18.0",
-    "npm": "9.7.1"
-  },
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
     "@testing-library/jest-dom": "^5.16.2",
@@ -31,7 +27,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build",
     "restart": "rm -rf node_modules && rm package-lock.json && npm install --force"
   },
   "eslintConfig": {
@@ -50,16 +45,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-  "keywords": [],
-  "author": "TpainMcain (https://github.com/TpainMcain)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TpainMcain/20-React-Portfolio.git"
-  },
-  "bugs": {
-    "url": "https://github.com/TpainMcain/20-React-Portfolio/issues"
-  },
-  "homepage": "https://github.com/TpainMcain/20-React-Portfolio#readme"
-}}
-
+    ]
+  }
+}

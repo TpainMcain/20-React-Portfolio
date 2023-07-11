@@ -8,11 +8,11 @@ function Github() {
   return (
     // A row that contains the GitHubCalendar component
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      // Header for the section
+      {/* Header for the section */}
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
         Days I <strong className="purple">Code</strong>
       </h1>
-      // GitHubCalendar component which displays GitHub contribution graph
+      {/* GitHubCalendar component which displays GitHub contribution graph */}
       <GitHubCalendar
         // GitHub username
         username="TpainMcain"
