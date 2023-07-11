@@ -12,12 +12,12 @@ function Type() {
         strings: [
           "Software Developer", // The strings to type out in sequence
           "Freelancer",
-          "MERN Stack Developer",
+          "Full Stack Developer",
           "Open Source Contributor",
         ],
         autoStart: true, // Automatically starts typing on load
         loop: true, // Repeats the sequence after all strings are typed out
-        deleteSpeed: 50, // Speed of the delete animation
+        deleteSpeed: 20, // Speed of the delete animation
       }}
     />
   );

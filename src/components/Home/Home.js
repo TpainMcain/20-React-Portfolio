@@ -36,7 +36,7 @@ function Home() {
                 <strong className="main-name"> TREVOR PRATT</strong>
               </h1>
               {/* Type animation */}
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 20, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
