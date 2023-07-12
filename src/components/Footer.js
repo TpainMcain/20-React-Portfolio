@@ -18,7 +18,7 @@ function Footer() {
       <Row> {/* Create a new row */}
         <Col md="4" className="footer-copywright">
           {/* Column for designer and developer info */}
-          <h3>Text?</h3>
+          <h3></h3>
         </Col>
         <Col md="4" className="footer-copywright">
           {/* Column for copyright info */}

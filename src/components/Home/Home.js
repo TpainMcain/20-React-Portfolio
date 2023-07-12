@@ -25,15 +25,15 @@ function Home() {
             <Col md={7} className="home-header">
               {/* Greeting header */}
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                Hello!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
               {/* Introduction header */}
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> TREVOR PRATT</strong>
+                I'm
+                <strong className="main-name"> Trevor Pratt</strong>
               </h1>
               {/* Type animation */}
               <div style={{ padding: 20, textAlign: "left" }}>

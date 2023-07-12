@@ -23,20 +23,19 @@ function Home2() {
             <h1 style={{ fontSize: "2em", paddingLeft: "10px" }}>LET ME <span className="purple"> INTRODUCE </span> MYSELF</h1>
             {/* The content of the self-introduction */}
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            I've always been fascinated by the world of technology, and the idea of creating solutions that can transform the lives of individuals and businesses alike. This led me to take the leap into the world of coding.
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> C++ and Javascript. </b>
               </i>
               <br />
-              <br />My field of Interest's are building new &nbsp;
+              <br />I am particularly interested in building new&nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
+                <b className="purple">Web Technologies and Products  </b> and
                 also in areas related to {" "}
                 <b className="purple">
-                  Blockchain.
+                  AI.
                 </b>
               </i>
               <br />
