@@ -10,6 +10,13 @@
   - [Contact Me](#contact-me)
   
 ## Description
+This is a portfolio project built using React. It showcases my skills, projects, and experiences as a developer. The site is fully responsive and provides a clear picture of my abilities and achievements.
+
+### Technology Stack
+* React.js
+* Node.js
+* Express.js
+* CSS3
 
 ## Installation Instructions
 If you wish to run this app locally:
