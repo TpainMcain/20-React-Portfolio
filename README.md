@@ -4,7 +4,6 @@
 ## Table of Contents
   - [Description](#description)
   - [Installation Instructions](#installation-instructions)
-  - [Usage Instructions](#usage-instructions)
   - [License Section](#license)
   - [Credits](#credits)
   - [Contact Me](#contact-me)
