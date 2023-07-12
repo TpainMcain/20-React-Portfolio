@@ -5,10 +5,9 @@ import { Col, Row } from "react-bootstrap";
 // Importing necessary icons from 'react-icons'
 import {
   SiVisualstudiocode,
-  SiPostman,
   SiSlack,
   SiVercel,
-  SiMacos,
+
 } from "react-icons/si";
 
 // Toolstack function component
@@ -18,13 +17,7 @@ function Toolstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {/* Each column contains an icon representing a tool */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSlack />

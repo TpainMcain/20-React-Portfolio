@@ -5,7 +5,9 @@ import ProjectCard from "./ProjectCards"; // The ProjectCard component to displa
 import Particle from "../Particle"; // The Particle component for the particle effect in the background
 
 // Importing the images for the project cards
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Placeholder from "../../Assets/Projects/placeholder.png";
+import P01Cover from "../../Assets/Projects/P01Cover.jpg";
+import Gamerli from "../../Assets/Projects/gamerli.jpg";
 
 function Projects() {
   return (
@@ -24,10 +26,34 @@ function Projects() {
           {/* Individual ProjectCards. 'imgPath' is the image at the top of the card, 'title' is the project title, 'description' is a brief description of the project, 'ghLink' is the link to the project's GitHub page, and 'demoLink' is the link to a live demo of the project (if available). */}
           {/* You can add as many ProjectCards as you want, just follow the structure. */}
           
+          {/* Card for the "Real-Time Country Info & Weather" project */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={P01Cover}
+              isBlog={false}
+              title="Real-Time Country Info & Weather"
+              description="This application, built with JavaScript, CSS, and HTML, is designed to retrieve and display a wide array of information about countries around the world, including current weather conditions."
+              ghLink="https://github.com/TpainMcain/P01-Real-Time-Country-Info-Weather-App"
+              demoLink="https://tpainmcain.github.io/P01-Real-Time-Country-Info-Weather-App/"
+            />
+          </Col>
+
           {/* Card for the "" project */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Gamerli}
+              isBlog={false}
+              title="GamerLi DB"
+              description="This full stack app allows users to create an account and log in to a personalized dashboard. The dashboard will allow users to add/delete games to their collection, view their collection & statistics."
+              ghLink="https://github.com/GameW1zard/GamerLi"
+              demoLink="https://gamerli.herokuapp.com/"
+            />
+          </Col>
+
+          {/* Card for the "" project */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Placeholder}
               isBlog={false}
               title=""
               description=""
@@ -39,7 +65,7 @@ function Projects() {
           {/* Card for the "" project */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Placeholder}
               isBlog={false}
               title=""
               description=""
@@ -48,10 +74,10 @@ function Projects() {
             />
           </Col>
 
-                    {/* Card for the "" project */}
-                    <Col md={4} className="project-card">
+          {/* Card for the "" project */}
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Placeholder}
               isBlog={false}
               title=""
               description=""
@@ -60,34 +86,10 @@ function Projects() {
             />
           </Col>
 
-                    {/* Card for the "" project */}
-                    <Col md={4} className="project-card">
+          {/* Card for the "" project */}
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title=""
-              description=""
-              ghLink=""
-              demoLink=""
-            />
-          </Col>
-
-                    {/* Card for the "" project */}
-                    <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title=""
-              description=""
-              ghLink=""
-              demoLink=""
-            />
-          </Col>
-
-                    {/* Card for the "" project */}
-                    <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Placeholder}
               isBlog={false}
               title=""
               description=""
