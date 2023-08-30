@@ -8,14 +8,12 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 // Icons for the navigation bar
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
+
 
 // Define the NavBar component
 function NavBar() {
@@ -78,43 +76,10 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
-            {/* Projects Link */}
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-            {/* Resume Link */}
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-            {/* Blog Link */}
-            <Nav.Item>
-              <Nav.Link
-                href="https://twp-mvc-tech-blog-632648a365a8.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
             {/* Github Link */}
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/TpainMcain/20-React-Portfolio"
+                href="https://github.com/LaurenWollaston/Rolodiet"
                 target="_blank"
                 className="fork-btn-inner"
               >
