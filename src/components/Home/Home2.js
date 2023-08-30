@@ -90,7 +90,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/TpainMcain/" // LinkedIn profile link
+                  href="https://www.linkedin.com/in/trevor-pratt-898b17157" // LinkedIn profile link
                   target="_blank" // Open in a new tab
                   rel="noreferrer" // For security reasons
                   className="icon-colour  home-social-icons"
