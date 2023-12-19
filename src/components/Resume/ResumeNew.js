@@ -42,6 +42,13 @@ function ResumeNew() {
           </Document>
         </Row>
 
+        <Row className="resume">
+          <Document file={pdf} className="d-flex justify-content-center">
+            {/* Page 2 of the PDF, scale depends on window width */}
+            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
+          </Document>
+        </Row>
+
         {/* Another download button at the bottom */}
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button

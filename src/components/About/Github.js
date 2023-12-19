@@ -15,9 +15,9 @@ function Github() {
       {/* GitHubCalendar component which displays GitHub contribution graph */}
       <GitHubCalendar
         // GitHub username
-        username="TpainMcain"
+        username="Trevorwp77"
         // The size of each block in the calendar graph
-        blockSize={15}
+        blockSize={14}
         // The margin around each block in the calendar graph
         blockMargin={5}
         // The color used for the blocks in the calendar graph
