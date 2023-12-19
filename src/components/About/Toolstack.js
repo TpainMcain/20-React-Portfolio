@@ -1,33 +1,37 @@
-// Importing necessary React and react-bootstrap components
-import React from "react";
-import { Col, Row } from "react-bootstrap";
+import React from 'react';
+import { Col, Row, Tooltip, OverlayTrigger } from 'react-bootstrap';
+import { SiVisualstudiocode, SiSlack, SiVercel, SiMicrosoftoffice, SiAdobe, SiGit, SiVirtualbox } from 'react-icons/si';
 
-// Importing necessary icons from 'react-icons'
-import {
-  SiVisualstudiocode,
-  SiSlack,
-  SiVercel,
+// ToolIcon functional component for creating each icon with a tooltip
+const ToolIcon = ({ Icon, label }) => (
+  <OverlayTrigger
+    key={label}
+    placement="top"
+    overlay={
+      <Tooltip id={`tooltip-${label}`}>
+        {label}
+      </Tooltip>
+    }
+  >
+    <Col xs={4} md={2} className="tech-icons">
+      <Icon />
+    </Col>
+  </OverlayTrigger>
+);
 
-} from "react-icons/si";
-
-// Toolstack function component
 function Toolstack() {
   return (
-    // A row for laying out icons
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* Each column contains an icon representing a tool */}
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
+    <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
+      <ToolIcon Icon={SiVisualstudiocode} label="Visual Studio Code" />
+      <ToolIcon Icon={SiMicrosoftoffice} label="Microsoft Office" />
+      <ToolIcon Icon={SiAdobe} label="Adobe Suite" />
+      <ToolIcon Icon={SiGit} label="Git" />
+      <ToolIcon Icon={SiVirtualbox} label="VirtualBox" />
+      <ToolIcon Icon={SiSlack} label="Slack" />
+      <ToolIcon Icon={SiVercel} label="Vercel" />
+      {/* Add more icons and labels as needed */}
     </Row>
   );
 }
 
-// Exporting the Toolstack component for use in other parts of the application
 export default Toolstack;

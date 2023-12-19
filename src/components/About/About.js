@@ -32,7 +32,7 @@ function About() {
           >
             {/* Header for the 'About' card */}
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I Am</strong>
+               <strong className="purple">More</strong> About Me...
             </h1>
             {/* 'About' card component */}
             <Aboutcard />

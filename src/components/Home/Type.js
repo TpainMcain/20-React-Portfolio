@@ -1,27 +1,34 @@
-// Import required dependencies
-import React from "react";  // Core dependency to use React
-import Typewriter from "typewriter-effect"; // Typewriter effect library
+import React from "react";
+import Typewriter from "typewriter-effect";
 
-// Define a functional component called Type
 function Type() {
   return (
-    // Typewriter component from the library
-    // options prop is used to customize the effect
     <Typewriter
       options={{
         strings: [
-          "Software Developer", // The strings to type out in sequence
+          "Software Developer",
           "Freelancer",
           "Full Stack Developer",
           "Open Source Contributor",
+          "JavaScript & TypeScript Enthusiast",
+          "React & Angular Specialist",
+          "Node.js & Spring Boot Expert",
+          "HTML5 & CSS3 Pro",
+          "Backend Developer with Express.js",
+          "RESTful & GraphQL API Integrator",
+          "MongoDB & SQL Database Manager",
+          "Agile Methodology Practitioner",
+          "Quality Assurance & Testing Advocate",
+          "Problem Solver & Innovative Thinker",
+          "UT Austin Bootcamp Alumnus",
+          "Passionate about Tech & Innovation"
         ],
-        autoStart: true, // Automatically starts typing on load
-        loop: true, // Repeats the sequence after all strings are typed out
-        deleteSpeed: 20, // Speed of the delete animation
+        autoStart: true,
+        loop: true,
+        deleteSpeed: 20,
       }}
     />
   );
 }
 
-// Export the Type component for use in other files
 export default Type;

@@ -1,114 +1,75 @@
-// Import required dependencies
-import React from "react"; // Core dependency to use React
-import { Container, Row, Col } from "react-bootstrap"; // Imported from react-bootstrap for grid layout
-import myImg from "../../Assets/avatar.svg"; // Avatar image import
-import Tilt from "react-parallax-tilt"; // Library for parallax effect on elements
-import {
-  AiFillGithub, // GitHub icon from react-icons
-  AiOutlineTwitter, // Twitter icon from react-icons
-  AiFillInstagram, // Instagram icon from react-icons
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa"; // LinkedIn icon from react-icons
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import myImg from "../../Assets/avatar.svg";
+import Tilt from "react-parallax-tilt";
+import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
-// Define a functional component called Home2
 function Home2() {
+  const Introduction = () => (
+    <h1 style={{ fontSize: "2em", paddingLeft: "10px" }}>
+      LET ME <span className="purple"> INTRODUCE </span> MYSELF
+    </h1>
+  );
+
+  const SelfIntroduction = () => (
+    <p className="home-about-body">
+      I am a <strong className="purple">Full Stack Developer</strong> with a strong foundation in 
+      <strong className="purple"> MongoDB, Express.js, React, and Node.js</strong>. My journey began in 
+      <strong className="purple">semiconductor manufacturing</strong>, where I honed my technical skills and work ethic. 
+      Now, I'm focused on leveraging these skills to develop <strong className="purple">user-centric web applications</strong>.
+      <br /><br />
+      Skilled in modern <strong className="purple">JavaScript (including ES6+), TypeScript</strong>, and frameworks like 
+      <strong className="purple">Angular and React</strong>, I excel in building dynamic web interfaces. 
+      My backend expertise extends to <strong className="purple">Spring Boot and Node.js</strong>, enabling robust application development.
+      <br /><br />
+      Proficient in <strong className="purple">HTML5, CSS3, and Express.js</strong>, I create responsive designs and handle complex 
+      routing and middleware. My database skills include <strong className="purple">MongoDB, MySQL, and PostgreSQL</strong>, 
+      ensuring data integrity and performance.
+      <br /><br />
+      I'm adept at operating within <strong className="purple">Agile methodologies</strong> and ensure quality in all aspects of development. 
+      My problem-solving abilities and adaptability help me navigate new challenges and rapidly evolving project requirements.
+      <br /><br />
+      As a graduate of <strong className="purple">UT Austin's MERN Full Stack Bootcamp</strong>, I've refined my technical skills and applied 
+      them in projects that showcase my capability to innovate and drive results.
+    </p>
+  );
+  
+
+  const Avatar = () => (
+    <Tilt>
+      <img src={myImg} className="img-fluid" alt="avatar" />
+    </Tilt>
+  );
+
+  const SocialLinks = () => (
+    <div>
+      <h1>FIND ME ON</h1>
+      <p>Feel free to <span className="purple">connect </span>with me</p>
+      <ul className="home-about-social-links">
+        <li className="social-icons"><a href="https://github.com/TpainMcain" target="_blank" rel="noreferrer" className="icon-colour home-social-icons"><AiFillGithub /></a></li>
+        <li className="social-icons"><a href="https://twitter.com/TpainMcain" target="_blank" rel="noreferrer" className="icon-colour home-social-icons"><AiOutlineTwitter /></a></li>
+        <li className="social-icons"><a href="https://www.linkedin.com/in/trevor-pratt-898b17157" target="_blank" rel="noreferrer" className="icon-colour home-social-icons"><FaLinkedinIn /></a></li>
+        <li className="social-icons"><a href="https://www.instagram.com/TpainMcain" target="_blank" rel="noreferrer" className="icon-colour home-social-icons"><AiFillInstagram /></a></li>
+      </ul>
+    </div>
+  );
+
   return (
-    // A fluid container that takes the full width of the screen
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          {/* Column for description */}
           <Col md={8} className="home-about-description">
-            {/* Self Introduction Section */}
-            <h1 style={{ fontSize: "2em", paddingLeft: "10px" }}>LET ME <span className="purple"> INTRODUCE </span> MYSELF</h1>
-            {/* The content of the self-introduction */}
-            <p className="home-about-body">
-            I've always been fascinated by the world of technology, and the idea of creating solutions that can transform the lives of individuals and businesses alike. This led me to take the leap into the world of coding.
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++ and Javascript. </b>
-              </i>
-              <br />
-              <br />I am particularly interested in building new&nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products  </b> and
-                also in areas related to {" "}
-                <b className="purple">
-                  AI.
-                </b>
-              </i>
-              <br />
-              <br />Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p>
+            <Introduction />
+            <SelfIntroduction />
           </Col>
-          {/* Column for avatar */}
           <Col md={4} className="myAvtar">
-            {/* Tilting effect for the avatar image */}
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+            <Avatar />
           </Col>
         </Row>
         <Row>
-          {/* Column for social links */}
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>Feel free to <span className="purple">connect </span>with me</p>
-            {/* Social media links */}
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/TpainMcain" // GitHub profile link
-                  target="_blank" // Open in a new tab
-                  rel="noreferrer" // For security reasons
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/TpainMcain" // Twitter profile link
-                  target="_blank" // Open in a new tab
-                  rel="noreferrer" // For security reasons
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/trevor-pratt-898b17157" // LinkedIn profile link
-                  target="_blank" // Open in a new tab
-                  rel="noreferrer" // For security reasons
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/TpainMcain" // Instagram profile link
-                  target="_blank" // Open in a new tab
-                  rel="noreferrer" // For security reasons
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
+            <SocialLinks />
           </Col>
         </Row>
       </Container>
@@ -116,5 +77,4 @@ function Home2() {
   );
 }
 
-// Export the Home2 component for use in other files
 export default Home2;

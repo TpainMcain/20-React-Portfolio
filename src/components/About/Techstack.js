@@ -1,62 +1,43 @@
-// Importing necessary React and react-bootstrap components
-import React from "react";
-import { Col, Row } from "react-bootstrap";
+import React from 'react';
+import { Col, Row, Tooltip, OverlayTrigger } from 'react-bootstrap';
+import { DiJavascript1, DiReact, DiNodejs, DiMongodb, DiGit, DiHtml5, DiCss3 } from 'react-icons/di';
+import { SiTypescript, SiAngular, SiSpring, SiPostgresql, SiMysql } from 'react-icons/si';
 
-// Importing necessary icons from 'react-icons'
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiNextdotjs,
-  SiPostgresql,
-} from "react-icons/si";
+// TechIcon functional component for creating each icon with a tooltip
+const TechIcon = ({ Icon, label }) => (
+  <OverlayTrigger
+    key={label}
+    placement="top"
+    overlay={
+      <Tooltip id={`tooltip-${label}`}>
+        {label}
+      </Tooltip>
+    }
+  >
+    <Col xs={4} md={2} className="tech-icons">
+      <Icon />
+    </Col>
+  </OverlayTrigger>
+);
 
-// Techstack function component
 function Techstack() {
   return (
-    // A row for laying out icons
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* Each column contains an icon representing a technology */}
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
+    <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
+      <TechIcon Icon={DiJavascript1} label="JavaScript" />
+      <TechIcon Icon={SiTypescript} label="TypeScript" />
+      <TechIcon Icon={SiAngular} label="Angular" />
+      <TechIcon Icon={DiReact} label="React" />
+      <TechIcon Icon={DiNodejs} label="Node.js" />
+      <TechIcon Icon={SiSpring} label="Spring Boot" />
+      <TechIcon Icon={DiMongodb} label="MongoDB" />
+      <TechIcon Icon={SiPostgresql} label="PostgreSQL" />
+      <TechIcon Icon={SiMysql} label="MySQL" />
+      <TechIcon Icon={DiGit} label="Git" />
+      <TechIcon Icon={DiHtml5} label="HTML5" />
+      <TechIcon Icon={DiCss3} label="CSS3" />
+      {/* Add more icons and labels as needed */}
     </Row>
   );
 }
 
-// Exporting the Techstack component for use in other parts of the application
 export default Techstack;
